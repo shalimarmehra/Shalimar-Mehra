@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shalimar Mehra</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/loader.css" />
+  <link rel="stylesheet" href="css/cursor.css" />
+  <script src="https://kit.fontawesome.com/978aed566f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="main-structure">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <div id="container">
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <span class="loading">Loading....</span>
+    </div>
+    <header>
+      <nav>
+        <div class="left">SHALIMAR'S PORTFOLIO</div>
+        <!-- toggle menu button -->
+        <div class="menubtn" onclick="openNav()"><img src="icons/menu.png" alt="menu"></div>
+        <div class="right">
+          <ul>
+            <li>
+              <img src="icons/home.png" alt="" /><a href="index.html">Home</a>
+            </li>
+            <li>
+              <img src="icons/about.png" alt="" /><a href="about.html">About Me</a>
+            </li>
+            <li>
+              <img src="icons/projects.png" alt="" /><a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <img src="icons/services.png" alt="" /><a href="services.html">Services</a>
+            </li>
+            <li>
+              <img src="icons/blog.png" alt="" /><a href="blogs.html">Blogs</a>
+            </li>
+            <li>
+              <img src="icons/contact.png" alt="" /><a href="contact-me.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Responsive side navbar -->
+      <div class="sideNav" id="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()"><img src="icons/close.png" alt="close"></a>
+        <div class="responsive-right" style="padding-top: 80px;">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About Me</a>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="blogs.html">Blogs</a>
+            </li>
+            <li>
+              <a href="contact-me.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Using Javascript to make side menu appear -->
+      <script>
+        function openNav(){
+          document.getElementById("sidenav").style.width="50%";
+        }
+        function closeNav(){
+          document.getElementById("sidenav").style.width="0%";
+        }
+      </script>
+    </header>
+
+    <hr style="margin: 50px" />
+
+    <main>
+      <section class="firstsection">
+        <div class="left-section">
+          Hi, I'm <span class="color">Shalimar Mehra</span>
+          <div style="width: 80%">Pursuing a MCA.</div>
+          <div style="width: 80%">I'm a <span id="element"></span></div>
+        </div>
+        <div class="right-section">
+          <img src="images/flying-man.png" alt="" />
+        </div>
+      </section>
+
+      <hr style="margin: 50px" />
+
+      <section class="experience">
+        <span class="text-gray">What I have done so far in experience</span>
+        <h1 class="main-headings">Work Experience<i class="fa-solid fa-briefcase" style="color: #479ac8; padding-left: 20px;"></i></h1>
+        <div class="experience-info"></div>
+      </section>
+      
+      <hr style="margin: 50px" />
+
+      <section class="about-me"">
+        <span class=" text-gray">Who am i</span>
+        <h1 class="main-headings">About Me<i class="fa-solid fa-address-card"
+            style="color: #479ac8; padding-left: 20px;"></i></h1>
+        <div class="about-me-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, optio autem similique laborum error fuga? Voluptatem vel dolor sapiente, velit voluptates facilis ipsam earum quae quisquam, officiis totam consequuntur expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit non quidem ipsum maiores reiciendis accusamus minima inventore aliquam est molestiae. Suscipit temporibus veritatis error soluta ducimus sapiente provident inventore sint impedit incidunt, voluptates dignissimos blanditiis unde in deleniti dolor reprehenderit distinctio omnis sequi aspernatur maxime, mollitia accusantium. Incidunt quas dolore harum maxime iusto, est quod, corporis necessitatibus ullam molestiae numquam ipsum aut qui commodi, temporibus repellat laudantium recusandae? Dolor impedit nostrum quaerat nisi cum asperiores consectetur necessitatibus voluptatum quibusdam repellendus cumque natus, voluptate repudiandae laborum inventore praesentium eum quod recusandae. Quia iusto nesciunt officia quis, optio fugiat illo deleniti inventore!</div>
+        <div class="read-more">
+          <a href="about.html">
+            Read More
+          </a>
+        </div>
+      </section>
+
+      <hr style="margin: 50px" />
+
+      <section class="projects">
+        <span class="text-gray">What I have done so far in projects</span>
+        <h1 class="main-headings">Projects<i class="fa-solid fa-tarp fa-lg"
+            style="color: #479ac8; padding-left: 20px;"></i></h1>
+        <div class="projects-info"></div>
+        <div class="read-more">
+          <a href="projects.html">
+            Read More
+          </a>
+        </div>
+      </section>
+
+      <hr style="margin: 50px" />
+
+      <section class="services">
+        <span class="text-gray">Best Service, Right Time, Right People</span>
+        <h1 class="main-headings">Services<i class="fa-solid fa-hands-holding-child"
+            style="color: #479ac8; padding-left: 20px;"></i></h1>
+        <div class="services-info"></div>
+        <div class="read-more">
+          <a href="services.html">
+            Read More
+          </a>
+        </div>
+      </section>
+
+      <hr style="margin: 50px" />
+
+      <section class="blogs">
+        <span class="text-gray">Scribbled thoughts and views on
+          technology and culture</span>
+        <h1 class="main-headings">Blogs<i class="fa-solid fa-newspaper" style="color: #479ac8; padding-left: 20px;"></i></h1>
+        <div class="blogs-info"></div>
+        <div class="read-more">
+          <a href="blogs.html">
+            Read More
+          </a>
+        </div>
+        
+      </section>
+
+      <hr style="margin: 50px" />
+
+      <section class="contact-me">
+        <span class="text-gray">Need help reach out to me</span>
+        <h1 class="main-headings">Contact Me<i class="fa-solid fa-address-book"
+            style="color: #479ac8; padding-left: 20px;"></i></h1>
+        <div class="contact-me-info"></div>
+        <div class="read-more">
+          <a href="contact-me.html">
+            Read More
+          </a>
+        </div>
+      </section>
+
+      <hr style="margin: 50px" />
+
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="first">
+          <h3>Shalimar's Developer Portfolio</h3>
+        </div>
+        <div class="second">
+          <ul>
+            <li>Home</li>
+            <li>About US</li>
+            <li>Services</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
+        <div class="third">
+          <ul>
+            <li>Home</li>
+            <li>About US</li>
+            <li>Services</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
+        <div class="forth">
+          <ul>
+            <li>Home</li>
+            <li>About US</li>
+            <li>Services</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        www.shalimarmehra.com | All Rights Reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/index.js"></script>
+  </section>
+</body>
+
+</html>
