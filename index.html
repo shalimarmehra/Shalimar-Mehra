@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/loader.css" />
   <link rel="stylesheet" href="css/cursor.css" />
+  <link rel="stylesheet" href="css/project-css.css">
   <script src="https://kit.fontawesome.com/978aed566f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -42,16 +43,21 @@
     </div>
     <header>
       <nav>
-        <div class="left">SHALIMAR'S PORTFOLIO</div>
+        <div class="nav-main">
+          <!-- <img src="images/logo.jpg" alt="shalimar mehra" class="left-image" /> -->
+          <div class="left"><a href="http://127.0.0.1:5500/index.html">SHALIMAR'S PORTFOLIO</a></div>
+        </div>
         <!-- toggle menu button -->
-        <div class="menubtn" onclick="openNav()"><img src="icons/menu.png" alt="menu"></div>
+        <div class="menubtn" onclick="openNav()">
+          <img src="icons/menu.png" alt="menu"
+            style="margin-top: 40px; width: 70%;">
+            <!-- <i class="fa-solid fa-bars"></i> -->
+          </div>
+        <!-- End toggle button -->
         <div class="right">
           <ul>
             <li>
               <img src="icons/home.png" alt="" /><a href="index.html">Home</a>
-            </li>
-            <li>
-              <img src="icons/about.png" alt="" /><a href="about.html">About Me</a>
             </li>
             <li>
               <img src="icons/projects.png" alt="" /><a href="projects.html">Projects</a>
@@ -70,8 +76,11 @@
       </nav>
       <!-- Responsive side navbar -->
       <div class="sideNav" id="sidenav">
-        <a href="#" class="closebtn" onclick="closeNav()"><img src="icons/close.png" alt="close"></a>
-        <div class="responsive-right" style="padding-top: 80px;">
+        <a href="#" class="closebtn" onclick="closeNav()">
+          <img src="icons/close.png" alt="close">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </a>
+        <div class="responsive-right">
           <ul>
             <li>
               <a href="index.html">Home</a>
@@ -94,18 +103,9 @@
           </ul>
         </div>
       </div>
-      <!-- Using Javascript to make side menu appear -->
-      <script>
-        function openNav(){
-          document.getElementById("sidenav").style.width="50%";
-        }
-        function closeNav(){
-          document.getElementById("sidenav").style.width="0%";
-        }
-      </script>
     </header>
 
-    <hr style="margin: 50px" />
+    <hr style="margin: 20px 20px" />
 
     <main>
       <section class="firstsection">
@@ -115,49 +115,420 @@
           <div style="width: 80%">I'm a <span id="element"></span></div>
         </div>
         <div class="right-section">
-          <img src="images/flying-man.png" alt="" />
+          <img src="images/flying-man.png" alt="flying-man" />
         </div>
       </section>
 
-      <hr style="margin: 50px" />
-
-      <section class="experience">
-        <span class="text-gray">What I have done so far in experience</span>
-        <h1 class="main-headings">Work Experience<i class="fa-solid fa-briefcase" style="color: #479ac8; padding-left: 20px;"></i></h1>
-        <div class="experience-info"></div>
-      </section>
-      
-      <hr style="margin: 50px" />
+      <hr style="margin: 50px 20px" />
 
       <section class="about-me"">
         <span class=" text-gray">Who am i</span>
         <h1 class="main-headings">About Me<i class="fa-solid fa-address-card"
             style="color: #479ac8; padding-left: 20px;"></i></h1>
-        <div class="about-me-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, optio autem similique laborum error fuga? Voluptatem vel dolor sapiente, velit voluptates facilis ipsam earum quae quisquam, officiis totam consequuntur expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit non quidem ipsum maiores reiciendis accusamus minima inventore aliquam est molestiae. Suscipit temporibus veritatis error soluta ducimus sapiente provident inventore sint impedit incidunt, voluptates dignissimos blanditiis unde in deleniti dolor reprehenderit distinctio omnis sequi aspernatur maxime, mollitia accusantium. Incidunt quas dolore harum maxime iusto, est quod, corporis necessitatibus ullam molestiae numquam ipsum aut qui commodi, temporibus repellat laudantium recusandae? Dolor impedit nostrum quaerat nisi cum asperiores consectetur necessitatibus voluptatum quibusdam repellendus cumque natus, voluptate repudiandae laborum inventore praesentium eum quod recusandae. Quia iusto nesciunt officia quis, optio fugiat illo deleniti inventore!</div>
-        <div class="read-more">
-          <a href="about.html">
-            Read More
-          </a>
+        <div class="about-me-info">
+          <div class="box">
+            <h4>Freelancer</h4>
+            <h3>Shalimar Mehra</h3>
+            <br>
+            <p>My name is Shalimar Mehra and I have recently completed a Bachelor of Computer Application and now pursuing an MCA ( Master of Computer Application ), majoring in Computing and Software Systems at the University of IGNOU ( Indira Gandhi National Open University ). I have a passion for all things technology and design, from software engineering to UI/UX.
+              In addition to my love of technology and design, I am also interested in education, history, economics and politics.</p>
+              <!-- <p><img src="images/bgprofile.png" alt=""></p> -->
+          </div>
         </div>
       </section>
 
-      <hr style="margin: 50px" />
+      <hr style="margin: 50px 10px;" />
+
+      <section class="experience">
+        <span class="text-gray">What I have done so far in experience</span>
+        <h1 class="main-headings">Work Experience<i class="fa-solid fa-briefcase"
+            style="color: #479ac8; padding-left: 20px;"></i></h1>
+        <div class="experience-info">
+          <div class="box">
+            <h4>August 2023 - <span style="color: #479ac8; text-transform: uppercase;">Present</span></h4>
+            <h3>Freelancing</h3>
+            <br>
+            <p>My name is Edward Hinrichsen and I have recently completed a Bachelor of Science, majoring in Computing and Software Systems at the University of Melbourne. I have a passion for all things technology and design, from software engineering to UI/UX.
+
+              In addition to my love of technology and design, I am also interested in education, history, economics and politics.
+              
+              Below are details of some of projects I have developed over my ten years of coding experience.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr style="margin: 50px 10px;" />
+
+      <section class="education">
+        <span class="text-gray">What I have done so far in education</span>
+        <h1 class="main-headings">Education<i class="fa-solid fa-briefcase"
+            style="color: #479ac8; padding-left: 20px;"></i></h1>
+        <div class="education-info">
+          <div class="box">
+            <h4>June 2023 - <span style="color: #479ac8; text-transform: uppercase;">Present</span></h4>
+            <h3>MCA ( Master of Computer Application ) - Indira Gandhi National Open University</h3><br>
+            <p>Design and Analysis of Algorithms | Discrete Mathematics | Software Engineering | Professional Skills and
+              Ethics | Security and Cyber Laws | Data Communication and Computer Networks | Object Oriented Analysis and
+              Design | Web Technologies | Data Warehousing and Data Mining | Artificial Intelligence and Machine
+              Learning | Accountancy and Financial Management | Data Science and Big Data | Cloud Computing and IoT |
+              Digital Image Processing and Computer Vision | Mobile Computing | Project</p>
+          </div>
+
+          <div class="box">
+            <h4>June 2019 - June 2022</h4>
+            <h3>BCA ( Bachelor of Computer Application ) - Indira Gandhi National Open University</h3><br>
+            <p>English | Business Organization | Computer Basics and PC Software | Mathematics | Problem Solving and
+              Programming | Communication Skills | Data and File Structures | Systems Analysis and Design | Database
+              Management Systems | Programming in C++ | Statistical Techniques | Object Oriented Technologies and Java
+              Programming | Fundamentals of Computer Networks | Algorithm Design | Internet Concepts and Web Design |
+              Software Engineering | Network Programming and Administration | Web Programming | Business Communication |
+              Operating System Concepts and Networking Management | Project</p>
+          </div>
+
+          <div class="box">
+            <h4>March 2018 - March 2019</h4>
+            <h3>Class 12th - Central Board of Secondary Education</h3><br>
+            <p>Commerce - Hindi | English | Accountancy | Economics | Business Studies | PhysicaL Education.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr style="margin: 50px 10px;" />
+
+      <section class="certifications">
+        <span class="text-gray">What I have done so far in education</span>
+        <h1 class="main-headings"><a href="https://www.linkedin.com/in/shalimar-mehra-831b971bb/">Licence &
+            Certifications<i class="fa-solid fa-briefcase" style="color: #479ac8; padding-left: 20px;"></i><i
+              class="fa fa-external-link" style="font-size:28px; color: grey;margin-left: 20px;"></i></a></h1>
+        <div class="certifications-info">
+
+          <div class="box">
+            <h4>Oct 2023</h4>
+            <h3><a href="https://www.udemy.com/certificate/UC-4e91caf7-c484-4e33-b412-db5185f9bfc1/">React JS- Complete Guide for Frontend Web Development - Udemy<i class="fa fa-external-link"
+                  style="font-size:18px; color: grey;margin-left: 20px;"></i></a></h3>
+                  <br>
+                  <p>Credential ID : UC-4e91caf7-c484-4e33-b412-db5185f9bfc1
+              <br>
+              Learn to create basic web pages using HTML5
+Learn to style and add animations to bring those basic web pages to life using CSS3
+Learn the Javascript language from basic to advanced along with the Next Gen JS - ES6
+Learn to create responsive and interactive web pages using Javascript and jQuery
+Create user-friendly, beautiful, light and fast websites using React JS
+Become an expert front end developer using ReactJs
+            </p>
+          </div>
+
+          <div class="box">
+            <h4>Feb 2023</h4>
+            <h3><a href="https://www.udemy.com/certificate/UC-546b187e-c260-4d7a-8e07-3c5306f583cc/">MySQL Database
+                Development Mastery - Udemy<i class="fa fa-external-link"
+                  style="font-size:18px; color: grey;margin-left: 20px;"></i></a></h3>
+                  <br>
+                  <p>Credential ID : UC-546b187e-c260-4d7a-8e07-3c5306f583cc
+              <br>
+              Install MySQL Server
+              Install MySQL Workbench
+              Connect to an Instance
+              Create a database
+              Reverse Engineer Database into Data Models
+              Forward Engineer Data Models into Databases
+              Create Tables
+              Run Queries against Tables
+              General use of the MySQL Workbench
+              Create Relationships
+              Use Aggregate functions to do quick mathematical operations
+              Export data to Excel using MySQL Workbench
+              Practical use of SQL
+            </p>
+          </div>
+
+          <div class="box">
+            <h4>Feb 2022</h4>
+            <h3><a href="https://drive.google.com/file/d/1yzrxQuVdv5Znb_Fp5R65fRlqBn2BLAdq/view">Developer Program -
+                Accenture by Forage<i class="fa fa-external-link"
+                  style="font-size:18px; color: grey;margin-left: 20px;"></i></a></h3>
+                  <br>
+                  <p>Credential ID : XspMgC4Fw5zfHkvgy
+              <br>
+              Define technical requirements
+              Design changes to an existing
+              architecture
+              Scale on-premise system
+              infrastructure to the cloud
+              Reading and understanding code
+              Attention to detail
+              <br>
+              Debugging algorithms
+              Unit testing
+              User Acceptance Testing - UAT
+              Security maturity assessment
+              IAM policies and permissions
+              <br>
+              Securing the software development
+              lifecycle (SDLC)
+              Shaping the Problem
+              Data and privacy
+            </p>
+          </div>
+
+          <div class="box">
+            <h4>Dec 2021</h4>
+            <h3><a href="https://drive.google.com/file/d/1JwCmlhpVbKettWO4t0oIvG9hy0dEZ5F4/view?usp=sharing">TCS iON
+                Career Edge - Tata Consultancy Services<i class="fa fa-external-link"
+                  style="font-size:18px; color: grey;margin-left: 20px;"></i></a></h3>
+                  <br>
+                  <p>Credential ID : 119854-20189486-1016<br>
+              Communication Skills │ Presentation Skills│ Soft Skills │ Career Guidance Framework │ Resume Writing
+              │ Group Discussion Skills│ Interview Skills │ Business Etiquette │ Effective Email Writing │ Telephone
+              Etiquette │ Accounting Foundamentals | IT Foundational Skill | Overview of Artificial Intelligence
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr style="margin: 50px 10px;" />
+
+      <section class="courses">
+        <span class="text-gray">What I have done so far in Institution</span>
+        <h1 class="main-headings"><a href="https://www.linkedin.com/in/shalimar-mehra-831b971bb/">Courses<i
+              class="fa-solid fa-briefcase" style="color: #479ac8; padding-left: 20px;"></i><i
+              class="fa fa-external-link" style="font-size:28px; color: grey;margin-left: 20px;"></i></a></h1>
+        <div class="courses-info">
+
+          <div class="box">
+            <h4>Feb 2019 - Feb 2022</h4>
+            <h3><a href="https://drive.google.com/file/d/1gGsIUvuMkPGVkzxDRAnze4EzM4UyzGC6/view">Master Diploma in
+                Computer Engineering - Indian Institute of Computer Science<i class="fa fa-external-link"
+                  style="font-size:18px; color: grey;margin-left: 20px;"></i></a></h3>
+                  <br>
+                  <p>Information Technology Tools and Network Basics | Web Designing & Publishing | Programming and Problem
+              Solving through C++ | Data Structure Through Object-Oriented Programming Language | Computer Organization
+              and Operating System | Databases Technologies | Web Application Development Using PHP |
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr style="margin: 50px 20px" />
 
       <section class="projects">
         <span class="text-gray">What I have done so far in projects</span>
-        <h1 class="main-headings">Projects<i class="fa-solid fa-tarp fa-lg"
-            style="color: #479ac8; padding-left: 20px;"></i></h1>
-        <div class="projects-info"></div>
+        <h1 class="main-headings"><a href="projects.html">Projects<i class="fa-solid fa-tarp fa-lg"
+              style="color: #479ac8; padding-left: 20px;"></i><i class="fa fa-external-link"
+              style="font-size:28px; color: grey;margin-left: 20px;"></i></a></h1>
+        <div class="projects-info" style="display: flex; margin-right: 20px;">
+
+          <!-- First Project -->
+          <article class="movie-card">
+            <img src="images/project-one.png" alt="social networking site wallpaper" />
+
+            <div class="content">
+              <h1>Social Networking Site&nbsp;&nbsp;·&nbsp;&nbsp;<a
+                  href="https://github.com/shalimarmehra/social-networking-site"><i class="fa fa-github"
+                    style="font-size:30px"></i><i class="fa fa-external-link"
+                    style="font-size:28px; color: grey;margin-left: 20px;"></i></a></h1>
+
+              <div class="infos">
+                <span>·&nbsp;&nbsp;November&nbsp;&nbsp;-&nbsp;&nbsp;2022</span>
+              </div>
+
+              <p class="synopsis">
+                • Basically, this Project on creating social connection so that you may interact with other people via
+                online through social media and you can make friends, conversation with them and many more.<br>
+                • Along with PHP, HTML, CSS, JSON, JavaScript and many more web technologies were used in its
+                development.<br>
+                • This Project developed with lots of efforts, devotion, patience, with curiosity.<br>
+                • In this project on social networking site you can create account, delete account, update account, send
+                request to another person etc.<br>
+                • I’ll seek assistance from websites, YouTube, and my friends.
+              </p>
+
+              <div class="icons">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.7439 22.3037L11.2939 20.9837C6.1439 16.3137 2.7439 13.2237 2.7439 9.45374C2.7439 6.36374 5.1639 3.95374 8.2439 3.95374C9.9839 3.95374 11.6539 4.76374 12.7439 6.03374C13.8339 4.76374 15.5039 3.95374 17.2439 3.95374C20.3239 3.95374 22.7439 6.36374 22.7439 9.45374C22.7439 13.2237 19.3439 16.3137 14.1939 20.9837L12.7439 22.3037Z"
+                    fill="white"></path>
+                </svg>
+
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.1439 21.3537C6.81056 21.4871 6.4939 21.4581 6.1939 21.2667C5.8939 21.0754 5.7439 20.7961 5.7439 20.4287V5.95374C5.7439 5.40374 5.9399 4.93274 6.3319 4.54074C6.7239 4.14874 7.19456 3.95307 7.7439 3.95374H17.7439C18.2939 3.95374 18.7649 4.14974 19.1569 4.54174C19.5489 4.93374 19.7446 5.4044 19.7439 5.95374V20.4287C19.7439 20.7954 19.5939 21.0747 19.2939 21.2667C18.9939 21.4587 18.6772 21.4877 18.3439 21.3537L12.7439 18.9537L7.1439 21.3537Z"
+                    fill="white"></path>
+                </svg>
+
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.7439 19.9537V17.9537H21.7439V19.9537H9.7439ZM9.7439 13.9537V11.9537H21.7439V13.9537H9.7439ZM9.7439 7.95374V5.95374H21.7439V7.95374H9.7439ZM5.7439 20.9537C5.1939 20.9537 4.7229 20.7577 4.3309 20.3657C3.9389 19.9737 3.74323 19.5031 3.7439 18.9537C3.7439 18.4037 3.9399 17.9327 4.3319 17.5407C4.7239 17.1487 5.19456 16.9531 5.7439 16.9537C6.2939 16.9537 6.7649 17.1497 7.1569 17.5417C7.5489 17.9337 7.74457 18.4044 7.7439 18.9537C7.7439 19.5037 7.5479 19.9747 7.1559 20.3667C6.7639 20.7587 6.29323 20.9544 5.7439 20.9537ZM5.7439 14.9537C5.1939 14.9537 4.7229 14.7577 4.3309 14.3657C3.9389 13.9737 3.74323 13.5031 3.7439 12.9537C3.7439 12.4037 3.9399 11.9327 4.3319 11.5407C4.7239 11.1487 5.19456 10.9531 5.7439 10.9537C6.2939 10.9537 6.7649 11.1497 7.1569 11.5417C7.5489 11.9337 7.74457 12.4044 7.7439 12.9537C7.7439 13.5037 7.5479 13.9747 7.1559 14.3667C6.7639 14.7587 6.29323 14.9544 5.7439 14.9537ZM5.7439 8.95374C5.1939 8.95374 4.7229 8.75774 4.3309 8.36574C3.9389 7.97374 3.74323 7.50307 3.7439 6.95374C3.7439 6.40374 3.9399 5.93274 4.3319 5.54074C4.7239 5.14874 5.19456 4.95307 5.7439 4.95374C6.2939 4.95374 6.7649 5.14974 7.1569 5.54174C7.5489 5.93374 7.74457 6.4044 7.7439 6.95374C7.7439 7.50374 7.5479 7.97474 7.1559 8.36674C6.7639 8.75874 6.29323 8.9544 5.7439 8.95374Z"
+                    fill="white"></path>
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Second Project -->
+          <article class="movie-card">
+            <img src="images/project-two.png" alt="3d-portfolio wallpaper" />
+
+            <div class="content">
+              <h1>3d Portfolio Website&nbsp;&nbsp;·&nbsp;&nbsp;<a
+                  href="https://github.com/shalimarmehra/3D-Porfolio-Website"><i class="fa fa-github"
+                    style="font-size:30px"></i><i class="fa fa-external-link"
+                    style="font-size:28px; color: grey;margin-left: 20px;"></i></a></h1>
+
+              <div class="infos">
+                <span>·&nbsp;&nbsp;September&nbsp;&nbsp;-&nbsp;&nbsp;2023</span>
+              </div>
+
+              <p class="synopsis">
+                • 3d-Portfolio Website.<br>
+                • Create with three.js.<br>
+              </p>
+
+              <div class="icons">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.7439 22.3037L11.2939 20.9837C6.1439 16.3137 2.7439 13.2237 2.7439 9.45374C2.7439 6.36374 5.1639 3.95374 8.2439 3.95374C9.9839 3.95374 11.6539 4.76374 12.7439 6.03374C13.8339 4.76374 15.5039 3.95374 17.2439 3.95374C20.3239 3.95374 22.7439 6.36374 22.7439 9.45374C22.7439 13.2237 19.3439 16.3137 14.1939 20.9837L12.7439 22.3037Z"
+                    fill="white"></path>
+                </svg>
+
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.1439 21.3537C6.81056 21.4871 6.4939 21.4581 6.1939 21.2667C5.8939 21.0754 5.7439 20.7961 5.7439 20.4287V5.95374C5.7439 5.40374 5.9399 4.93274 6.3319 4.54074C6.7239 4.14874 7.19456 3.95307 7.7439 3.95374H17.7439C18.2939 3.95374 18.7649 4.14974 19.1569 4.54174C19.5489 4.93374 19.7446 5.4044 19.7439 5.95374V20.4287C19.7439 20.7954 19.5939 21.0747 19.2939 21.2667C18.9939 21.4587 18.6772 21.4877 18.3439 21.3537L12.7439 18.9537L7.1439 21.3537Z"
+                    fill="white"></path>
+                </svg>
+
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.7439 19.9537V17.9537H21.7439V19.9537H9.7439ZM9.7439 13.9537V11.9537H21.7439V13.9537H9.7439ZM9.7439 7.95374V5.95374H21.7439V7.95374H9.7439ZM5.7439 20.9537C5.1939 20.9537 4.7229 20.7577 4.3309 20.3657C3.9389 19.9737 3.74323 19.5031 3.7439 18.9537C3.7439 18.4037 3.9399 17.9327 4.3319 17.5407C4.7239 17.1487 5.19456 16.9531 5.7439 16.9537C6.2939 16.9537 6.7649 17.1497 7.1569 17.5417C7.5489 17.9337 7.74457 18.4044 7.7439 18.9537C7.7439 19.5037 7.5479 19.9747 7.1559 20.3667C6.7639 20.7587 6.29323 20.9544 5.7439 20.9537ZM5.7439 14.9537C5.1939 14.9537 4.7229 14.7577 4.3309 14.3657C3.9389 13.9737 3.74323 13.5031 3.7439 12.9537C3.7439 12.4037 3.9399 11.9327 4.3319 11.5407C4.7239 11.1487 5.19456 10.9531 5.7439 10.9537C6.2939 10.9537 6.7649 11.1497 7.1569 11.5417C7.5489 11.9337 7.74457 12.4044 7.7439 12.9537C7.7439 13.5037 7.5479 13.9747 7.1559 14.3667C6.7639 14.7587 6.29323 14.9544 5.7439 14.9537ZM5.7439 8.95374C5.1939 8.95374 4.7229 8.75774 4.3309 8.36574C3.9389 7.97374 3.74323 7.50307 3.7439 6.95374C3.7439 6.40374 3.9399 5.93274 4.3319 5.54074C4.7239 5.14874 5.19456 4.95307 5.7439 4.95374C6.2939 4.95374 6.7649 5.14974 7.1569 5.54174C7.5489 5.93374 7.74457 6.4044 7.7439 6.95374C7.7439 7.50374 7.5479 7.97474 7.1559 8.36674C6.7639 8.75874 6.29323 8.9544 5.7439 8.95374Z"
+                    fill="white"></path>
+                </svg>
+              </div>
+            </div>
+          </article>
+
+        </div>
         <div class="read-more">
+          <!-- <img src="icons/click.png" alt="click"> -->
           <a href="projects.html">
-            Read More
+            <i class="fa-solid fa-diagram-project"></i>
+            See More Prjects
           </a>
         </div>
       </section>
 
-      <hr style="margin: 50px" />
+      <hr style="margin: 50px 20px" />
 
-      <section class="services">
+      <section class="skills">
+        <span class=" text-gray">What I know</span>
+        <h1 class="main-headings">My Skills<i class='fas fa-award'
+            style='font-size:30px; margin-left: 20px; color: #479ac8;'></i></h1>
+        <div class="skills-info">
+          <div class="box">
+            <ul class="progressBar">
+              <li>
+                <h3>HTML ( Hyper text markup language ) <span style="float: right;">90%</span></h3>
+                <span class="bar"><span class="html"></span></span>
+              </li>
+              <li>
+                <h3>CSS ( Cascading style sheet ) <span style="float: right;">70%</h3>
+                <span class="bar"><span class="css"></span></span>
+              </li>
+              <li>
+                <h3>JavaScript <span style="float: right;">45%</h3>
+                <span class="bar"><span class="javascript"></span></span>
+              </li>
+              <li>
+                <h3>React JS <span style="float: right;">75%</h3>
+                <span class="bar"><span class="reactjs"></span></span>
+              </li>
+              <li>
+                <h3>PHP ( Hypertext Preprocessor ) <span style="float: right;">60%</h3>
+                <span class="bar"><span class="php"></span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr style="margin: 50px 20px" />
+
+      <section class="blogs">
+        <span class=" text-gray">I Write, Sometime | About design,
+          frontend dev,
+          learning and life.</span>
+        <h1 class="main-headings">Bloga & Articles<i class='fa fa-newspaper-o'
+            style='font-size:30px; margin-left: 20px; color: #479ac8;'></i></h1>
+        <div class="blogs-info">
+          <div class="box">
+            <h3>Put here 1 article</h3>
+            <p>About design,
+              frontend dev,
+              learning and life.</p>
+          </div>
+          <div class="read-more">
+            <!-- <img src="icons/click.png" alt="click"> -->
+            <a href="http://127.0.0.1:5500/blogs.html">
+              <i class='fa fa-newspaper-o'></i>
+              Read My Articles
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr style="margin: 50px 10px;" />
+
+      <section class="youtube">
+        <span class="text-gray">My YouTube Journey</span>
+        <h1 class="main-headings"><a href="https://www.youtube.com/@shalimarmehra">YouTube Channel <i
+              class="fa fa-youtube-play" style="color:red"></i><i class="fa fa-external-link"
+              style="font-size:28px; color: grey;margin-left: 20px;"></i></a></h1>
+        <div class="youtube-info">
+          <div class="box">
+            <!-- <h4>2018-2022</h4>
+            <h3>High School Degree</h3> -->
+            <p>
+              <iframe width="560" height="315" class="iframe"
+                src="https://www.youtube.com/embed/WEc9Ol3jKXk?si=dYsp8FdHr-bQtKMy" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <iframe width="560" height="315" class="iframe"
+                src="https://www.youtube.com/embed/UKJmTDd_G3g?si=ENm79t4r374acPgc" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </p>
+          </div>
+
+          <div class="box">
+            <!-- <h4>2018-2022</h4>
+            <h3>High School Degree</h3> -->
+            <p>
+              <iframe width="560" height="315" class="iframe"
+                src="https://www.youtube.com/embed/w53TksPS_fY?si=QvWAGlOWBO5N8TKu" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <iframe width="560" height="315" class="iframe"
+                src="https://www.youtube.com/embed/S-BFXbDJWcQ?si=iMAYVTJDNmU7683C" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </p>
+          </div>
+        </div>
+        <div class="read-more">
+          <!-- <img src="icons/click.png" alt="click"> -->
+          <a href="https://www.youtube.com/@shalimarmehra">
+            <i class="fa fa-youtube-play" style="color:red"></i>
+            See More YouTube Videos
+          </a>
+        </div>
+      </section>
+
+      <!-- <hr style="margin: 50px 20px" /> -->
+
+      <!-- <section class="services">
         <span class="text-gray">Best Service, Right Time, Right People</span>
         <h1 class="main-headings">Services<i class="fa-solid fa-hands-holding-child"
             style="color: #479ac8; padding-left: 20px;"></i></h1>
@@ -169,7 +540,7 @@
         </div>
       </section>
 
-      <hr style="margin: 50px" />
+      <hr style="margin: 50px 20px" />
 
       <section class="blogs">
         <span class="text-gray">Scribbled thoughts and views on
@@ -184,7 +555,7 @@
         
       </section>
 
-      <hr style="margin: 50px" />
+      <hr style="margin: 50px 20px" />
 
       <section class="contact-me">
         <span class="text-gray">Need help reach out to me</span>
@@ -196,49 +567,57 @@
             Read More
           </a>
         </div>
-      </section>
+      </section> -->
 
-      <hr style="margin: 50px" />
+      <hr style="margin: 0px 20px" />
 
     </main>
     <footer>
-      <div class="footer">
-        <div class="first">
-          <h3>Shalimar's Developer Portfolio</h3>
+      <div class="footerContainer">
+        <p>Shalimar Mehra</p>
+        <div class="SocialIcons">
+          <a href="https://github.com/shalimarmehra"><img src="icons/github.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/shalimar-mehra-831b971bb/"><img src="icons/linkedin.png" alt=""></a>
+          <a href="https://www.youtube.com/@shalimarmehra"><img src="icons/youtube.png" alt=""></a>
+          <a href="https://twitter.com/shalimarmehra"><img src="icons/twitter.png" alt=""></a>
+          <a href="https://www.instagram.com/shalimar.mehra/"><img src="icons/instagram.png" alt=""></a>
+          
         </div>
-        <div class="second">
+        <div class="footerNav">
           <ul>
-            <li>Home</li>
-            <li>About US</li>
-            <li>Services</li>
-            <li>Contact Me</li>
-          </ul>
-        </div>
-        <div class="third">
-          <ul>
-            <li>Home</li>
-            <li>About US</li>
-            <li>Services</li>
-            <li>Contact Me</li>
-          </ul>
-        </div>
-        <div class="forth">
-          <ul>
-            <li>Home</li>
-            <li>About US</li>
-            <li>Services</li>
-            <li>Contact Me</li>
+            <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/projects.html">Projects</a></li>
+            <li><a href="http://127.0.0.1:5500/services.html">Services</a></li>
+            <li><a href="http://127.0.0.1:5500/blogs.html">Blogs</a></li>
+            <li><a href="http://127.0.0.1:5500/contact-me.html">Contact Me</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-rights">
-        www.shalimarmehra.com | All Rights Reserved
+      <div class="footerBottom">
+        <p>Copyright &copy;2023: <span class="designer">Shalimar Mehra</span>All Rights Reserved</p>
       </div>
     </footer>
+
+    <button id="go-top-btn">
+      <img src="icons/arrow.png" alt="arrow">
+      <!-- <i class="fa fa-chevron-circle-up" style="font-size:36px; background-color: black; color: #479ac8;"></i> -->
+    </button>
+    <!-- Using Javascript to make side menu appear -->
+    <script>
+      function openNav() {
+        document.getElementById("sidenav").style.width = "50%";
+      }
+      function closeNav() {
+        document.getElementById("sidenav").style.width = "0%";
+      }
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="js/index.js"></script>
+    
   </section>
-  <p></p>
 </body>
 
 </html>
